@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "design.css",
+	"sources": [
+		"design.scss"
+	],
+	"sourcesContent": [
+		"$color-font: #2A2A2A;\n$color-bleu: #00B4BC;\n$color-hover: #1DD2DA;\n\nbody{\n\tfont-family: 'Roboto', sans-serif;\n\t\n}\n\nh1,h2,h3,h4,h5{font-family: 'Gelasio', serif; color: $color-bleu;}\np{line-height: 2.2em;}\n\nnav{\n\ttext-transform: uppercase;\n\tfont-size: 0.9em;\n\tjustify-content: center;\n\tmargin: 0 auto;\n}\n\nbutton.btn{\n\tbackground-color: $color-bleu;\n\tborder:none;\n\tpadding: 1em;\n\ttext-transform: uppercase;\n\tfont-weight: 500;\n\tfont-size: 0.8em;\n\t&:hover, &:focus{\n\t\tbackground-color: $color-hover;\n\t\tborder: none;\n\t\tbox-shadow: none;\n\t}\n}\n\n.window{\n\tbackground-color: $color-bleu;\n\tcolor: #fff;\n\ttext-align: center;\n\twidth: 100%;\n\tpadding: 2em;\n\tmargin: 2em 0;\n\th3{\n\t\tcolor: #fff;\n\t\twidth: 70%;\n\t\tmargin: 0 auto;\n\t}\n\tspan{\n\t\tfont-weight: 700;\n\t}\n}\n\nfooter{\n\tcolor: #fff;\n\tbackground-color: $color-font;\n\tnav a{color: #fff;}\n}"
+	],
+	"names": [],
+	"mappings": "AAIA,AAAA,IAAI,CAAA,EACH,WAAW,EAAE,oBAAoB,GAEjC;;AAED,AAAA,EAAE,EAAC,EAAE,EAAC,EAAE,EAAC,EAAE,EAAC,EAAE,CAAA,EAAC,WAAW,EAAE,gBAAgB,EAAE,KAAK,EARtC,OAAO,GAQ+C;;AACnE,AAAA,CAAC,CAAA,EAAC,WAAW,EAAE,KAAK,GAAG;;AAEvB,AAAA,GAAG,CAAA,EACF,cAAc,EAAE,SAAS,EACzB,SAAS,EAAE,KAAK,EAChB,eAAe,EAAE,MAAM,EACvB,MAAM,EAAE,MAAM,GACd;;AAED,AAAA,MAAM,AAAA,IAAI,CAAA,EACT,gBAAgB,EAnBJ,OAAO,EAoBnB,MAAM,EAAC,IAAI,EACX,OAAO,EAAE,GAAG,EACZ,cAAc,EAAE,SAAS,EACzB,WAAW,EAAE,GAAG,EAChB,SAAS,EAAE,KAAK,GAMhB;;AAZD,AAOC,MAPK,AAAA,IAAI,AAOR,MAAM,EAPR,MAAM,AAAA,IAAI,AAOC,MAAM,CAAA,EACf,gBAAgB,EAzBJ,OAAO,EA0BnB,MAAM,EAAE,IAAI,EACZ,UAAU,EAAE,IAAI,GAChB;;AAGF,AAAA,OAAO,CAAA,EACN,gBAAgB,EAjCJ,OAAO,EAkCnB,KAAK,EAAE,IAAI,EACX,UAAU,EAAE,MAAM,EAClB,KAAK,EAAE,IAAI,EACX,OAAO,EAAE,GAAG,EACZ,MAAM,EAAE,KAAK,GASb;;AAfD,AAOC,OAPM,CAON,EAAE,CAAA,EACD,KAAK,EAAE,IAAI,EACX,KAAK,EAAE,GAAG,EACV,MAAM,EAAE,MAAM,GACd;;AAXF,AAYC,OAZM,CAYN,IAAI,CAAA,EACH,WAAW,EAAE,GAAG,GAChB;;AAGF,AAAA,MAAM,CAAA,EACL,KAAK,EAAE,IAAI,EACX,gBAAgB,EApDJ,OAAO,GAsDnB;;AAJD,AAGC,MAHK,CAGL,GAAG,CAAC,CAAC,CAAA,EAAC,KAAK,EAAE,IAAI,GAAG"
+}

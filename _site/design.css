@@ -1,0 +1,23 @@
+body { font-family: 'Roboto', sans-serif; }
+
+h1, h2, h3, h4, h5 { font-family: 'Gelasio', serif; color: #00B4BC; }
+
+p { line-height: 2.2em; }
+
+nav { text-transform: uppercase; font-size: 0.9em; justify-content: center; margin: 0 auto; }
+
+button.btn { background-color: #00B4BC; border: none; padding: 1em; text-transform: uppercase; font-weight: 500; font-size: 0.8em; }
+
+button.btn:hover, button.btn:focus { background-color: #1DD2DA; border: none; box-shadow: none; }
+
+.window { background-color: #00B4BC; color: #fff; text-align: center; width: 100%; padding: 2em; margin: 2em 0; }
+
+.window h3 { color: #fff; width: 70%; margin: 0 auto; }
+
+.window span { font-weight: 700; }
+
+footer { color: #fff; background-color: #2A2A2A; }
+
+footer nav a { color: #fff; }
+
+/*# sourceMappingURL=design.css.map */

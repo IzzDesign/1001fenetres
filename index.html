@@ -1,0 +1,100 @@
+---
+
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Design -->
+    <link href="https://fonts.googleapis.com/css?family=Gelasio:500|Roboto:400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="design.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+
+    <title>1001 fenêtres</title>
+  </head>
+  <body>
+    {% include nav.html %}
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h1>Choisir Grosfillex,</h1>
+          <p>c'est la garantie d'une menuiserie sur mesure de qualité, fabriquée en France avec les meilleures performances thermiques, acoustiques et sécuritaires du marché grâce à des packs adaptés.</p>
+          {% include contact.html %}
+
+        </div>
+        <div class="col-lg-8">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row window">
+        <div class="row">
+          <h3>Profitez de notre expérience unique dans la rénovation, l'aménagement et la protection de la maison.</h3>
+        </div>
+        <div class="col-sm">
+          <span>Un financement adapté sur-mesure</span>
+        </div>
+        <div class="col-sm">
+          <span>La pose avec des experts qualifiés et le respect des normes</span>
+        </div>        
+        <div class="col-sm">
+          <span>Un devis gratuit</span>
+        </div>        
+        <div class="col-sm">
+          <span>Des produits aux normes NF et 100% français</span>
+        </div>        
+      </div>
+
+      <div class="row">
+        <div class="col-lg-5">
+          <h2>Contactez-nous</h2>
+          <p>93 Rue Pasteur, 69300 Caluire-et-Cuire</p>
+          <p>Du lundi au vendredi 09:00–13:00, 14:00–18:00</p>
+          <p>contact@1001fenêtres.com</p>
+          <img src="">
+        </div>
+        <div class="col-lg-7">
+          <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ-YWZH9Dq9EcRlZd_yerd1rE&key=..." allowfullscreen></iframe> 
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
