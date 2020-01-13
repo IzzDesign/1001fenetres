@@ -1,22 +1,44 @@
 ---
 ---
-$color-font: #2A2A2A;
+$color-noir: #2A2A2A;
+$color-font: #6E7887;
 $color-bleu: #00B4BC;
 $color-hover: #1DD2DA;
 
 body{
 	font-family: 'Roboto', sans-serif;
-	
+	color: $color-font;
 }
+.row{margin-top: 2em;}
 
 h1,h2,h3,h4,h5{font-family: 'Gelasio', serif; color: $color-bleu;}
 p{line-height: 2.2em;}
+h1,h2{font-size: 1.8em;}
 
 nav{
 	text-transform: uppercase;
 	font-size: 0.9em;
 	justify-content: center;
 	margin: 0 auto;
+	&.bg-light{
+		max-width: 1140px;
+	}
+}
+.navbar-brand{padding-right: 2em; font-weight: 900;}
+.navbar-expand-lg .navbar-nav .nav-link{
+	margin-right: 1em;
+	margin-left: 1em;
+	margin-bottom: 10px;
+	border-bottom: 3px solid #fff;
+	&:active, &:focus, &:hover, &:focus-within{
+		color:$color-bleu;
+		border-bottom: 3px solid $color-bleu;
+	}
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link{
+	color:$color-bleu;
+	border-bottom: 3px solid $color-bleu;
 }
 
 button.btn{
@@ -31,27 +53,89 @@ button.btn{
 		border: none;
 		box-shadow: none;
 	}
+	&:active, .active{
+	background-color: $color-bleu;
+	}
 }
 
 .window{
 	background-color: $color-bleu;
 	color: #fff;
 	text-align: center;
-	width: 100%;
-	padding: 2em;
+	padding: 1em 2em 3em 2em;
 	margin: 2em 0;
 	h3{
 		color: #fff;
 		width: 70%;
 		margin: 0 auto;
 	}
+	svg{
+		max-width:180px ;
+		margin: 0 auto;
+	}
 	span{
 		font-weight: 700;
+		line-height: 1.5em;
 	}
+	.row{max-width: 1140px; margin: 0 auto;}
+}
+
+.adress{
+	p{line-height: 1em;}
+}
+
+.form-control{
+	background-color: #F1F1F1;
+	border: 1px solid #B7BFC8;
+}
+
+.form-control:focus{
+	background-color: #F1F1F1;
+	border: 1px solid #B7BFC8;
+	box-shadow: 0 0 0 .2rem #D8D8D8;
 }
 
 footer{
 	color: #fff;
-	background-color: $color-font;
-	nav a{color: #fff;}
+	background-color: $color-noir;
+	nav a{
+		color: #fff;
+		&:hover, &:focus, &:focus-within, &:active{
+			color:#fff;
+			text-decoration: underline!important; 
+		}
+	}
+	.ligne1{
+	display: flex;
+	flex-wrap: wrap;
+	}
 }
+
+/*Pop up*/
+.modal-dialog{
+	max-width: 400px;
+}
+
+.modal-body{padding: 0 3rem;}
+
+.modal-header{
+	border-bottom: none;
+	padding: 2rem 2rem 0 3rem;
+}
+
+.modal-footer{
+	border-top: none;
+	text-align: center;
+	justify-content: center;
+	.btn{padding: 1em 3em;}
+}
+
+.modal-title{font-size: 2em;}
+.close{font-size: 2em;}
+
+.form-check{
+	line-height: 2.5em;
+	&input{body-sizing:1em;}
+}
+
+.form-check-input{margin-top: 0.8em;}
