@@ -1,15 +1,15 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">1001 fenêtres</a>
+  <a class="navbar-brand" href="index.html">1001 fenêtres</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Accueil <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Menuiseries</a>
-      <a class="nav-item nav-link" href="#">Portails et portes de garages</a>
-      <a class="nav-item nav-link" href="#">Portes et volets</a>
-      <a class="nav-item nav-link" href="#">Occultations solaires</a>
+      <a class="nav-item nav-link {% if page.url == '/' %}active{% endif %}" href="index.html">Accueil</a>
+      <a class="nav-item nav-link {% if page.url == '/menuiserie.html' %}active{% endif %}" href="menuiserie.html">Menuiseries</a>
+      <a class="nav-item nav-link {% if page.url == '/portails.html' %}active{% endif %}" href="portails.html">Portails et portes de garages</a>
+      <a class="nav-item nav-link {% if page.url == '/portes.html' %}active{% endif %}" href="portes.html">Portes et volets</a>
+      <a class="nav-item nav-link {% if page.url == '/solaire.html' %}active{% endif %}" href="solaire.html">Occultations solaires</a>
     </div>
   </div>
 </nav>

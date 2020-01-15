@@ -9,11 +9,16 @@ body{
 	font-family: 'Roboto', sans-serif;
 	color: $color-font;
 }
-.row{margin-top: 2em;}
+.row{margin-top: 2em; margin-bottom: 2em;}
 
 h1,h2,h3,h4,h5{font-family: 'Gelasio', serif; color: $color-bleu;}
 p{line-height: 2.2em;}
 h1,h2{font-size: 1.8em;}
+h3{font-size: 1.5em;}
+a{
+	color: $color-bleu;
+	&:hover{color:$color-hover;}
+}
 
 nav{
 	text-transform: uppercase;
@@ -29,7 +34,7 @@ nav{
 	margin-right: 1em;
 	margin-left: 1em;
 	margin-bottom: 10px;
-	border-bottom: 3px solid #fff;
+	border-bottom: 3px solid #f8f9fa ;
 	&:active, &:focus, &:hover, &:focus-within{
 		color:$color-bleu;
 		border-bottom: 3px solid $color-bleu;
@@ -41,6 +46,10 @@ nav{
 	border-bottom: 3px solid $color-bleu;
 }
 
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
 button.btn{
 	background-color: $color-bleu;
 	border:none;
@@ -48,14 +57,31 @@ button.btn{
 	text-transform: uppercase;
 	font-weight: 500;
 	font-size: 0.8em;
+	margin-bottom: 1em;
 	&:hover, &:focus{
 		background-color: $color-hover;
 		border: none;
 		box-shadow: none;
 	}
-	&:active, .active{
+	a{color: #fff;text-decoration: none;}
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus{
+	box-shadow: none;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle{
 	background-color: $color-bleu;
-	}
+}
+
+.carousel{margin: 2em 0;}
+.img-fluid{margin: 1em 0;}
+
+.box{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 1em;
+	p{margin: 0 1em;}
+	button{margin-bottom:0;}
 }
 
 .window{
@@ -86,7 +112,7 @@ button.btn{
 
 .form-control{
 	background-color: #F1F1F1;
-	border: 1px solid #B7BFC8;
+	border: 1px solid #C9D3DF;
 }
 
 .form-control:focus{
@@ -98,16 +124,15 @@ button.btn{
 footer{
 	color: #fff;
 	background-color: $color-noir;
+	padding: 0.5em;
+	p{margin-bottom: 0;line-height: 1.2em;}
+	a{color: #fff;}
 	nav a{
 		color: #fff;
 		&:hover, &:focus, &:focus-within, &:active{
 			color:#fff;
 			text-decoration: underline!important; 
 		}
-	}
-	.ligne1{
-	display: flex;
-	flex-wrap: wrap;
 	}
 }
 
@@ -133,9 +158,62 @@ footer{
 .modal-title{font-size: 2em;}
 .close{font-size: 2em;}
 
-.form-check{
-	line-height: 2.5em;
-	&input{body-sizing:1em;}
+.form-group{
+	margin: 2em 0;
+	position: relative;
 }
 
-.form-check-input{margin-top: 0.8em;}
+.input_icon{
+	position: absolute;
+	top: 0.1em;
+	left: 0.5em;
+	font-size: 21px;
+	width: 50px;
+}
+
+.mail{
+	font-size:15px;
+	top: 0.5em;
+}
+
+.form-check{
+	display: flex;
+	align-items: center;
+	label{
+		margin-left: 1em;
+		line-height: 3em;
+	}
+}
+
+.form-control{padding-left: 2em;}
+.form-check-input{margin-top: 0;}
+
+input[type="checkbox"], input[type="radio"]{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -border-radius: 4px;
+    height: 30px;
+    width: 30px;
+  	background: #F1F1F1;
+    border: 1px solid #C9D3DF;
+    border-radius: 5px;
+    line-height: 1.5em;
+}
+
+input[type="checkbox"]:checked {
+  background: #F1F1F1;
+  position: absolute;
+  &:before {
+    content: '\2713';
+    font-size: 1.5em;
+    display: block;
+    color: grey;
+    position: absolute;
+    align-items: center;
+    padding-left: 0.3em;
+  }
+}
+
+.portecarousel{text-align: center;}
+.carousel-caption{max-width:300px;margin: 0 auto; background-color: rgba(0,0,0,0.3);}
