@@ -50,6 +50,13 @@ li.dropdown:hover > .dropdown-menu {
     display: block;
 }
 
+.line{
+	background-color: $color-bleu;
+	color: #fff;
+	padding: 0.3em;
+	max-width: 300px;
+}
+
 button.btn{
 	background-color: $color-bleu;
 	border:none;
@@ -78,7 +85,7 @@ button.btn{
 .box{
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
+	align-items: baseline;
 	margin-top: 1em;
 	p{margin: 0 1em;}
 	button{margin-bottom:0;}
