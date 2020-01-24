@@ -57,13 +57,13 @@ li.dropdown:hover > .dropdown-menu {
 	max-width: 300px;
 }
 
-button.btn{
+button.btn, input.btn{
 	background-color: $color-bleu;
 	border:none;
+	font-size: 0.9em;
 	padding: 1em;
 	text-transform: uppercase;
 	font-weight: 500;
-	font-size: 0.8em;
 	margin-bottom: 1em;
 	&:hover, &:focus{
 		background-color: $color-hover;
@@ -205,7 +205,7 @@ input[type="checkbox"], input[type="radio"]{
   	background: #F1F1F1;
     border: 1px solid #C9D3DF;
     border-radius: 5px;
-    line-height: 1.5em;
+    line-height: 1.6em;
 }
 
 input[type="checkbox"]:checked {
@@ -213,7 +213,7 @@ input[type="checkbox"]:checked {
   position: absolute;
   &:before {
     content: '\2713';
-    font-size: 1.5em;
+    font-size: 1.4em;
     display: block;
     color: grey;
     position: absolute;
