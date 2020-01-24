@@ -18,7 +18,13 @@
     {% include analytics.html %}
     {% include metas.html %}
 
-    <title>1001 Fenêtres</title>
+    <title>
+        {% if page.title %}
+            {{ page.title }} &middot; 1001 Fenêtres
+        {% else %}
+        1001 Fenêtres
+        {% endif %}
+    </title>
   </head>
   <body>
     {% include nav.html %}
