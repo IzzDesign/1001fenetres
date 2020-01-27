@@ -8,13 +8,8 @@ $color-hover: #1DD2DA;
 body{
 	font-family: 'Roboto', sans-serif;
 	color: $color-font;
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	min-height: 100vh;
 }
-
-.row{margin-top: 2em; margin-bottom: 2em;display: flex;}
+.row{margin-top: 2em; margin-bottom: 2em;}
 
 h1,h2,h3,h4,h5{font-family: 'Gelasio', serif; color: $color-bleu;}
 p{line-height: 2.2em;}
@@ -137,9 +132,6 @@ footer{
 	color: #fff;
 	background-color: $color-noir;
 	padding: 0.5em;
-	margin: 0 auto;
-	margin-top: auto;
-	max-width: 1140px;
 	p{margin-bottom: 0;line-height: 1.2em;}
 	a{color: #fff;}
 	nav a{
