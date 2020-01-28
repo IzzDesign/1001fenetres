@@ -222,5 +222,12 @@ input[type="checkbox"]:checked {
   }
 }
 
+.info{
+	padding: 2em;
+	text-align: center;
+	font-size: 1.2em;
+	svg{max-width: 200px;max-height: 300px;}
+}
+
 .portecarousel{text-align: center;}
 .carousel-caption{max-width:300px;margin: 0 auto; background-color: rgba(0,0,0,0.3);}
