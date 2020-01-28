@@ -1,54 +1,71 @@
 <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="contactModalTitle">Contactez-nous</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Laissez-nous vos coordonnées et notre équipe vous contactera dans les plus brefs délais.</p>
-        <form method="POST" action="https://neamar.fr/email.php" id="contactForm">
-          <input type="hidden" name="protection" id="protection" value="1" />
-          <input type="hidden" name="_subject" value="Contact : 1001 fenêtres" />
-          <input type="hidden" name="message" value="" id="message" />
-          <input type="hidden" name="_to" value="neamar@neamar.fr" />
+      <div id="form">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalTitle">Contactez-nous</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Laissez-nous vos coordonnées et notre équipe vous contactera dans les plus brefs délais.</p>
+          <form method="POST" action="https://neamar.fr/email.php" id="contactForm">
+            <input type="hidden" name="protection" id="protection" value="1" />
+            <input type="hidden" name="_subject" value="Contact : 1001 fenêtres" />
+            <input type="hidden" name="message" value="" id="message" />
+            <input type="hidden" name="_to" value="neamar@neamar.fr" />
 
-          <div class="form-group">
-            <span class="input_icon mail"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-            <input type="email" class="form-control" required id="_replyto" name="_replyto" placeholder="Email">
+            <div class="form-group">
+              <span class="input_icon mail"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+              <input type="email" class="form-control" required id="_replyto" name="_replyto" placeholder="Email">
+            </div>
+            <p>Vous êtes intéressé par un devis gratuit pour :</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="menuiseries" id="menuiseries" name="interests">
+              <label class="form-check-label" for="menuiseries">Menuiseries</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="portails et clotûres" id="portails-clotures" name="interests">
+              <label class="form-check-label" for="portails-clotures">Portails/Clotûres/Portes de garage</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="portes et volets" id="porte-volets" name="interests">
+              <label class="form-check-label" for="porte-volets">Portes/Volets</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="occultation solaire" id="occultation-solaire" name="interests">
+              <label class="form-check-label" for="occultation-solaire">Occultation solaire</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="vitrines" id="vitrines" name="interests">
+              <label class="form-check-label" for="vitrines">Vitrines</label>
+            </div>
+            <div class="form-group">
+              <span class="input_icon"><i class="fa fa-mobile" aria-hidden="true"></i></span>
+              <input type="telephone" class="form-control" id="phone" name="phone" placeholder="Téléphone">
+            </div>
           </div>
-          <p>Vous êtes intéressé par un devis gratuit pour :</p>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="menuiseries" id="menuiseries" name="interests">
-            <label class="form-check-label" for="menuiseries">Menuiseries</label>
+          <div class="modal-footer">
+            <input type="submit" class="btn btn-primary" value="Envoyer" />
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="portails et clotûres" id="portails-clotures" name="interests">
-            <label class="form-check-label" for="portails-clotures">Portails/Clotûres/Portes de garage</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="portes et volets" id="porte-volets" name="interests">
-            <label class="form-check-label" for="porte-volets">Portes/Volets</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="occultation solaire" id="occultation-solaire" name="interests">
-            <label class="form-check-label" for="occultation-solaire">Occultation solaire</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="vitrines" id="vitrines" name="interests">
-            <label class="form-check-label" for="vitrines">Vitrines</label>
-          </div>
-          <div class="form-group">
-            <span class="input_icon"><i class="fa fa-mobile" aria-hidden="true"></i></span>
-            <input type="telephone" class="form-control" id="phone" name="phone" placeholder="Téléphone">
-          </div>
+        </form>
+      </div>
+      <div id="mailsent">
+        <div class="modal-header">
+          <h5 class="modal-title">Rapport d'envoi</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        <div class="modal-footer">
-          <input type="submit" class="btn btn-primary" value="Envoyer" />
-        </div>
-      </form>
+        <div class="info success">
+            Votre message a bien été envoyé.
+          </div>
+          <div class="info error">
+            Une erreur s'est produite.
+            <button class="btn btn-primary" id="form-retry">Réessayer</button>
+          </div>
+      </div>
     </div>
   </div>
 </div>
