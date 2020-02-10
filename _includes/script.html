@@ -10,7 +10,7 @@
     $("#contactForm").submit(function (e) {
       e.preventDefault(); // avoid to execute the actual submit of the form.
 
-      $("#form").hide();      
+      $("#form").hide();
 
       var form = $(this);
       var url = form.attr('action');
@@ -34,6 +34,8 @@
           $("#mailsent .error").show(200);
         }
       });
+
+      gtag('event', 'conversion', {'send_to': 'AW-738549997/nU3RCLnCgcMBEO3BleAC'});
     });
   });
 </script>
