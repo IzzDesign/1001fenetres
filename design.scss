@@ -4,6 +4,7 @@ $color-noir: #2A2A2A;
 $color-font: #6E7887;
 $color-bleu: #00B4BC;
 $color-hover: #1DD2DA;
+$color-hover2: #EDEDED;
 
 body{
 	font-family: 'Roboto', sans-serif;
@@ -44,6 +45,27 @@ nav{
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link{
 	color:$color-bleu;
 	border-bottom: 3px solid $color-bleu;
+}
+
+.reduction{
+	background-color: $color-bleu;
+	padding: 2em;
+	align-items: center;
+	p{font-family: 'Gelasio', serif; color: #fff; font-size: 1.7em; line-height: 1.2em;}
+	b{text-decoration: underline;}
+	span{color: #fff; font-weight: 500;}
+	button.btn{
+		background-color: #fff;
+		color: $color-bleu;
+		margin: 0 auto;
+		font-size: 1em;
+		&:hover, &:focus{
+		background-color: #fff;
+		border: none;
+		box-shadow: none;
+		color: $color-hover;
+		}
+	}
 }
 
 li.dropdown:hover > .dropdown-menu {
@@ -138,7 +160,7 @@ footer{
 		color: #fff;
 		&:hover, &:focus, &:focus-within, &:active{
 			color:#fff;
-			text-decoration: underline!important; 
+			text-decoration: underline!important;
 		}
 	}
 }
@@ -231,3 +253,15 @@ input[type="checkbox"]:checked {
 
 .portecarousel{text-align: center;}
 .carousel-caption{max-width:300px;margin: 0 auto; background-color: rgba(0,0,0,0.3);}
+
+@media (max-width: 768px) {
+	.reduction{
+	padding: 1em;
+	p{font-size: 1.4em;}
+	button.btn{
+		font-size: 0.9em;
+		&:hover, &:focus{
+		}
+	}
+}
+}
