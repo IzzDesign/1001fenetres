@@ -7,8 +7,11 @@ $color-hover: #1DD2DA;
 $color-hover2: #EDEDED;
 
 body{
+	display: flex;
+	flex-direction: column;
 	font-family: 'Roboto', sans-serif;
 	color: $color-font;
+	min-height: 100vh;
 }
 .row{margin-top: 2em; margin-bottom: 2em;}
 
@@ -30,10 +33,10 @@ nav{
 		max-width: 1140px;
 	}
 }
-.navbar-brand{padding-right: 2em; font-weight: 900;}
+.navbar-brand{padding-right: 0.5em; font-weight: 900;}
 .navbar-expand-lg .navbar-nav .nav-link{
-	margin-right: 1em;
-	margin-left: 1em;
+	margin-right: 0.5em;
+	margin-left: 0.5em;
 	margin-bottom: 10px;
 	border-bottom: 3px solid #f8f9fa ;
 	&:active, &:focus, &:hover, &:focus-within{
@@ -52,7 +55,7 @@ nav{
 	padding: 2em;
 	align-items: center;
 	p{font-family: 'Gelasio', serif; color: #fff; font-size: 1.7em; line-height: 1.2em;}
-	b{text-decoration: underline;}
+	sup{font-size: 0.7em;}
 	span{color: #fff; font-weight: 500;}
 	button.btn{
 		background-color: #fff;
@@ -154,6 +157,7 @@ footer{
 	color: #fff;
 	background-color: $color-noir;
 	padding: 0.5em;
+	margin-top: auto;
 	p{margin-bottom: 0;line-height: 1.2em;}
 	a{color: #fff;}
 	nav a{
