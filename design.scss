@@ -272,21 +272,9 @@ input[type="checkbox"]:checked {
 }
 
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
 	.map-responsive {
 		padding-bottom:42.25%;
-	}
-}
-
-@media (min-width: 992px) {
-	.map-responsive {
-		padding-bottom:47.25%;
-	}
-}
-
-@media (min-width: 768px) {
-	.map-responsive {
-		padding-bottom:50.25%;
 	}
 }
 
