@@ -259,13 +259,24 @@ input[type="checkbox"]:checked {
 .carousel-caption{max-width:300px;margin: 0 auto; background-color: rgba(0,0,0,0.3);}
 
 @media (max-width: 768px) {
+	h1,h2{font-size: 1.2em;}
+	h3{font-size: 1.1em;}
+	p{
+		line-height: 1.9em;
+		font-size: 0.8em;
+	}
+	.window span{font-size: 0.9em;}
+	button.btn{
+		font-size: 0.7em;
+	}
+	.maps{max-width: 760px;}
 	.reduction{
 	padding: 1em;
-	p{font-size: 1.4em;}
+	p{font-size: 1em;margin-bottom:0;}
+	span{font-size: 0.8em;}
 	button.btn{
-		font-size: 0.9em;
-		&:hover, &:focus{
-		}
+		font-size: 0.7em;
+		margin-top: 1em;
 	}
 }
 }
