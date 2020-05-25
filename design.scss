@@ -257,10 +257,8 @@ input[type="checkbox"]:checked {
 
 .portecarousel{text-align: center;}
 .carousel-caption{max-width:300px;margin: 0 auto; background-color: rgba(0,0,0,0.3);}
-
 .map-responsive {
 	overflow:hidden;
-	padding-bottom:56.25%;
 	position:relative;
 	height:0;
 }
@@ -268,9 +266,40 @@ input[type="checkbox"]:checked {
 .map-responsive iframe {
 	left:0;
 	top:0;
-	max-height: 450px;
+	height: 100%;
 	width:100%;
 	position:absolute;
+}
+
+
+@media (min-width: 1200px) {
+	.map-responsive {
+		padding-bottom:42.25%;
+	}
+}
+
+@media (min-width: 992px) {
+	.map-responsive {
+		padding-bottom:47.25%;
+	}
+}
+
+@media (min-width: 768px) {
+	.map-responsive {
+		padding-bottom:50.25%;
+	}
+}
+
+@media (min-width: 576px) {
+	.map-responsive {
+		padding-bottom:50.25%;
+	}
+}
+
+@media (max-width: 576px) {
+	.map-responsive {
+		padding-bottom:60.25%;
+	}
 }
 
 @media (max-width: 768px) {
