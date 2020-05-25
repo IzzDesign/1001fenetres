@@ -271,16 +271,15 @@ input[type="checkbox"]:checked {
 	position:absolute;
 }
 
-
-@media (max-width: 1200px) {
-	.map-responsive {
-		padding-bottom:42.25%;
-	}
-}
-
 @media (min-width: 576px) {
 	.map-responsive {
 		padding-bottom:50.25%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.map-responsive {
+		padding-bottom:42.25%;
 	}
 }
 
