@@ -5,46 +5,30 @@ condition: portails, stores et pergolas
 ---
   {% include head.html %}
     <div class="container">
-      {% include reduction.html %}
-      <div class="row">
-        <div class="col-lg-6">
+      <div class="row-wrap header-solaire">
+        <img src="img/solaire/pergola1.png">
+        <img src="img/solaire/pergola2.png">
+        <img src="img/solaire/pergola3.png">
+        <div class="intro-pages">
+          <h2>Pergolas et stores</h2>
+            {% include reduction.html %}
+            {% include contact.html %}
+        </div>
+        <img src="img/solaire/pergola4.png">
+      </div>
+      <div class="row-wrap column">
+        <div>
           <h2>Pergola</h2>
           <p><b>La pergola bioclimatique</b> a été conçue pour vous apporter toutes les garanties de <b>robustesse, de rigidité et d'esthétisme</b> d'un produit aluminium haute gamme.</p> <p>Toit rétractable, protection latérale contre le vent, les regards indiscrets et le soleil, tout est possible pour profiter au mieux de vos extérieurs.</p>
-
+        </div>
+        <img src="img/solaire/pergola5.png">
+        <div>
           <h2>Store banne</h2>
           <p><b>Le store</b> vous permet de gérer facilement votre luminosité, votre espace et votre température au gré de vos envies.</p><p>Il s'intègre parfaitement à votre habitation <b>quel que soit le type d'architecture.</b></p> <p>Un vrai système de protection solaire qui vous protège de toute agression climatique.</p>
-
-          {% include contact.html %}
         </div>
-        <div class="col-lg-6">
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/solaire/pergola1.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/solaire/pergola2.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/solaire/pergola3.png" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-          {% include catalogue.html %}
-        </div>
+        <img src="img/solaire/pergola6.png">
       </div>
+        {% include catalogue.html %}
+        {% include contact.html %}
     </div>
     {% include footer.html %}
