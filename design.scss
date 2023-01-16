@@ -80,21 +80,6 @@ nav{
 	img{
 		width: 100%;
 	}
-	img:nth-child(1){
-		max-width: 520px;
-	}
-	img:nth-child(2){
-		max-height: 497px;
-		max-width: 316px;
-	}
-	img:nth-child(3){
-		max-height: 406px;
-		max-width: 316px;
-	}
-	img:nth-child(5){
-		max-height: 342px;
-		max-width: 520px;
-	}
 	.figcaption{
 		position: absolute;
 		background-color: white;
@@ -452,14 +437,18 @@ button.btn, input.btn{
 	background-color: white;
 }
 
-.carousel{margin: 2em 0;}
-.img-fluid{margin: 1em 0;}
+button.btn-vert, input.btn-vert{
+	background-color: $color-vert;
+		&:hover, &:focus{
+		background-color: $color-vert;
+	}
+}
 
 .box{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: baseline;
-	margin-top: 1em;
+	margin: 1em 0;
 	p{margin: 0 1em;}
 	button{margin-bottom:0;}
 }
@@ -620,7 +609,25 @@ input[type="checkbox"]:checked {
 	position:absolute;
 }
 
+@media (max-width: 1274px) {
+	.navbar-expand-lg{
+		flex-direction: column;
+		button{
+			margin: 0.5em;
+		}
+	}
+
+}
+
 @media (max-width: 1222px) {
+	.header .intro::after {
+		width: 500px;
+	}
+	.icones{
+		flex-direction: column;
+		align-items: flex-start;
+		width: 50%;
+	}
 	.row-wrap{
 		a:nth-child(3){
 			transform: translateY(0px);
@@ -635,6 +642,14 @@ input[type="checkbox"]:checked {
 	.map-responsive {
 		padding-bottom:50.25%;
 	}
+	.header, .header-menuiseries, .header-portails, .header-vitrine, .header-portes, .header-solaire{
+		a:nth-child(1), a:nth-child(2), a:nth-child(3), a:nth-child(4), a:nth-child(5){
+			
+		}
+	}
+		.header .intro{
+			width: 100%;
+		}
 }
 
 @media (min-width: 1200px) {
@@ -649,12 +664,25 @@ input[type="checkbox"]:checked {
 	}
 }
 
+@media (max-width: 1132px) {
+	.intro-pages::after {
+		display: none;
+	}
+	.header, .header-menuiseries, .header-portails, .header-vitrine, .header-portes, .header-solaire{
+		img:nth-child(1), img:nth-child(2), img:nth-child(3), img:nth-child(4), img:nth-child(5){
+			transform: translateY(0px);
+		}
+	}
+}
+
 @media (max-width: 768px) {
 	h1,h2{font-size: 1.2em;}
 	h3{font-size: 1.1em;}
-	p{
-		line-height: 1.9em;
-		font-size: 0.8em;
+	.header .intro button{
+		background-color: $color-violet;
+	}
+	.header .intro::after {
+		display: none;
 	}
 	.window span{font-size: 0.9em;}
 	button.btn{
@@ -667,6 +695,6 @@ input[type="checkbox"]:checked {
 	button.btn{
 		font-size: 0.7em;
 		margin-top: 1em;
+		}
 	}
-}
 }
