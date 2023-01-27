@@ -81,9 +81,8 @@ nav{
 }
 
 .header{
-	justify-content: center;
-	gap: 20px;
 	img{
+		height: auto;
 		width: 100%;
 	}
 	.figcaption{
@@ -240,8 +239,6 @@ nav{
 
 .header-menuiseries{
 	display: flex;
-	justify-content: center;
-	gap: 20px;
 	img:nth-child(1){
 		max-width: 538px;
 		max-height: 554px;
@@ -268,8 +265,6 @@ nav{
 
 .header-portes{
 	display: flex;
-	justify-content: center;
-	gap: 20px;
 	img:nth-child(1){
 		max-width: 508px;
 		max-height: 638px;
@@ -297,8 +292,6 @@ nav{
 
 .header-portails{
 	display: flex;
-	justify-content: center;
-	gap: 20px;
 	img:nth-child(1){
 		max-width: 538px;
 		max-height: 554px;
@@ -319,8 +312,6 @@ nav{
 
 .header-solaire{
 	display: flex;
-	justify-content: center;
-	gap: 20px;
 	img:nth-child(1){
 		max-width: 551px;
 		max-height: 568px;
@@ -343,6 +334,17 @@ nav{
 	.intro-pages::after{
 		transform: translate(-20px, -450px);
 	}
+}
+
+.header, .header-vitrine, .header-solaire, .header-menuiseries, .header-portes, .header-portails{
+	img{
+		width: 100%;
+		height: auto;
+	}
+	justify-content: center;
+	gap: 20px;
+	opacity: 0;
+	animation: appear 0.9s cubic-bezier(.82,.5,.47,1.07) forwards;
 }
 
 .intro-pages{
@@ -613,6 +615,18 @@ input[type="checkbox"]:checked {
 	max-height: 100%;
 	width:100%;
 	position:absolute;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 100%;
+    transform: translateY(0px);
+  }
 }
 
 @media (max-width: 1274px) {
