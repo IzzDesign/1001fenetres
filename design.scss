@@ -592,14 +592,10 @@ input[type="checkbox"]:checked {
 	svg{max-width: 200px;max-height: 300px;}
 }
 
-.portecarousel{
-	text-align: center;
-}
-
-.carousel-caption{
-	max-width:300px;
-	margin: 0 auto;
-	background-color: rgba(0,0,0,0.3);
+.magasin{
+	width: 100%;
+	gap: 20px;
+	justify-content: center;
 }
 
 .map-responsive {
