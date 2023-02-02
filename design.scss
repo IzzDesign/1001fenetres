@@ -511,10 +511,12 @@ footer{
 
 /*Pop up*/
 .modal-dialog{
-	max-width: 400px;
+	max-width: 600px;
 }
 
-.modal-body{padding: 0 3rem;}
+.modal-body{
+	padding: 0 3rem;
+}
 
 .modal-header{
 	border-bottom: none;
@@ -536,6 +538,13 @@ footer{
 	position: relative;
 }
 
+#contactForm{
+	.row-wrap{
+		gap: 20px;
+		justify-content: center;
+	}
+}
+
 .input_icon{
 	position: absolute;
 	top: 0.1em;
@@ -552,40 +561,63 @@ footer{
 .form-check{
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	position: relative;
+	padding: 0;
+	width: 48%;
+	height: auto;
+	min-width: 240px;
+	min-height: 240px;
+	border: 1px solid #F9F9ED;;
 	label{
-		margin-left: 1em;
-		line-height: 3em;
+		line-height: 1em;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		font-family: 'Gelasio', serif;
+		justify-content: space-around;
+		align-items: center;
+		height: 80%;
+		font-size: 1.2em;
+		img{
+			width: 121px;
+			height: 121px;
+		}
 	}
 }
 
-.form-control{padding-left: 2em;}
-.form-check-input{margin-top: 0;}
+.form-control{
+	padding-left: 2em;
+	&:focus{
+		box-shadow: 0 0 0 .2rem $color-violet;
+	}
+}
 
-input[type="checkbox"], input[type="radio"]{
+input[type="checkbox"]{
 	-webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
     -border-radius: 4px;
-    height: 30px;
-    width: 30px;
-  	background: #F1F1F1;
-    border: 1px solid #C9D3DF;
-    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+  	background: #F9F9ED;
     line-height: 1.6em;
+    position: inherit;
+    transition: all 0.4s ease-in;
+}
+
+input[type="checkbox"]:focus {
+  outline: none;
+}
+
+input[type="checkbox"]:focus-visible {
+  outline: 2px solid #F9F9ED;
 }
 
 input[type="checkbox"]:checked {
-  background: #F1F1F1;
-  position: absolute;
-  &:before {
-    content: '\2713';
-    font-size: 1.4em;
-    display: block;
-    color: grey;
-    position: absolute;
-    align-items: center;
-    padding-left: 0.3em;
-  }
+  background: $color-vert;
+  outline: 2px solid #F9F9ED;
 }
 
 .info{
