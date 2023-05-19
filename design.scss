@@ -537,7 +537,7 @@ footer{
 .close{font-size: 2em;}
 
 .form-group{
-	margin: 2em 0;
+	margin: 0.8em 0;
 	position: relative;
 }
 
@@ -567,10 +567,10 @@ footer{
 	justify-content: center;
 	position: relative;
 	padding: 0;
-	width: 48%;
+	width: 25%;
 	height: auto;
-	min-width: 240px;
-	min-height: 240px;
+	min-width: 180px;
+	min-height: 180px;
 	border: 1px solid #F9F9ED;
 	cursor: pointer;
 	label{
@@ -586,8 +586,8 @@ footer{
 		font-size: 1.2em;
 		pointer-events: none;
 		img{
-			width: 121px;
-			height: 121px;
+			width: 60px;
+			height: 60px;
 		}
 	}
 }
