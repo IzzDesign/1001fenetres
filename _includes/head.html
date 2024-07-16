@@ -15,6 +15,11 @@
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <script>
+      if(localStorage && !localStorage.getItem('landing')) {
+        localStorage.setItem("landing", document.location);
+      }
+    </script>
     {% include analytics.html %}
     {% include metas.html %}
 
