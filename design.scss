@@ -262,7 +262,7 @@ nav{
 		max-height: 390px;
 	}
 	.intro-pages::after{
-		transform: translate(5px, -460px);
+		transform: translate(-15px, -390px);
 	}
 }
 
@@ -289,7 +289,7 @@ nav{
 		transform: translateY(-40px);
 	}
 	.intro-pages::after{
-		transform: translate(-20px, -450px);
+		transform: translate(-15px, -390px);
 	}
 }
 
@@ -361,9 +361,6 @@ nav{
 		height: 350px;
 		position: absolute;
 		z-index: -2;
-	}
-	.contact{
-		transform: translate(140px, -20px);
 	}
 	.reduction p{
 		font-size: 1.3em;
