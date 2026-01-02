@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -19,6 +19,30 @@
       if(localStorage && !localStorage.getItem('landing')) {
         localStorage.setItem("landing", document.location);
       }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@latest/tarteaucitron.min.js"></script>
+
+    <script>
+    tarteaucitron.init({
+        "privacyUrl": "https://1001fenetres.fr", /* URL de ta page de confidentialité */
+        "hashtag": "#tarteaucitron",
+        "cookieName": "tarteaucitron",
+        "orientation": "bottom",
+        "showAlertSmall": false,
+        "cookieslist": true,
+        "adblocker": false,
+        "highPrivacy": true,
+        "handleBrowserDNTRequest": false,
+        "removeCredit": false,
+        "moreInfoLink": true,
+        "useExternalCss": false,
+        "mandatory": false,
+        "googleConsentMode": true  /* Active le Consent Mode v2 */
+    });
+    </script>
+    <script>
+      tarteaucitron.user.googletagmanagerId = 'GTM-UA-156466349-1'; // Ton ID GTM
+      (tarteaucitron.job = tarteaucitron.job || []).push('googletagmanager');
     </script>
     {% include analytics.html %}
     {% include metas.html %}
