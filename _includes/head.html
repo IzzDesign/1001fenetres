@@ -16,6 +16,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+
+      // Consentement par défaut : refusé
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        analytics_storage: 'denied'
+      });
+    </script>
+    <script>
       if(localStorage && !localStorage.getItem('landing')) {
         localStorage.setItem("landing", document.location);
       }
@@ -24,7 +34,7 @@
 
     <script>
     tarteaucitron.init({
-        "privacyUrl": "https://1001fenetres.fr", /* URL de ta page de confidentialité */
+        "privacyUrl": "politique-confidentialite.html", /* URL de ta page de confidentialité */
         "hashtag": "#tarteaucitron",
         "cookieName": "tarteaucitron",
         "orientation": "bottom",
@@ -39,6 +49,23 @@
         "mandatory": false,
         "googleConsentMode": true  /* Active le Consent Mode v2 */
     });
+    tarteaucitron.services.googleads = {
+      "key": "googleads",
+      "type": "ads",
+      "name": "Google Ads",
+      "needConsent": true,
+      "cookies": ['_gcl_au'],
+      "js": function () {
+        gtag('consent', 'update', {
+          ad_storage: 'granted'
+        });
+      },
+      "fallback": function () {
+        gtag('consent', 'update', {
+          ad_storage: 'denied'
+        });
+      }
+    };
     </script>
     <script>
       tarteaucitron.user.googletagmanagerId = 'GTM-UA-156466349-1'; // Ton ID GTM
